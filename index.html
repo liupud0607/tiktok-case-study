@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TikTok Shop — Bridging the Checkout Gap · Doan Huong</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HFQT70FR11');
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -326,7 +335,7 @@ footer a:hover { text-shadow: var(--glow-sm); }
 
 <nav>
   <div class="nav-inner">
-    <a href="https://huong-s-portfolio.vercel.app" class="back">
+    <a href="https://huong-s-portfolio.vercel.app" class="back" onclick="gtag('event', 'click_portfolio_nav', { 'button_location': 'top_nav' });">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
       Back to portfolio
     </a>
@@ -466,7 +475,7 @@ footer a:hover { text-shadow: var(--glow-sm); }
 
 <footer>
   <div class="container">
-    <p>Made by <a href="https://huong-s-portfolio.vercel.app">Doan Huong</a> · Product Intern candidate · 2026</p>
+    <p>Made by <a href="https://huong-s-portfolio.vercel.app" onclick="gtag('event', 'click_portfolio_footer', { 'button_location': 'footer' });">Doan Huong</a> · Product Intern candidate · 2026</p>
   </div>
 </footer>
 
